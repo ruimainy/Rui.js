@@ -1,6 +1,6 @@
 Rui.js
 ======
-（停了，懒得写了）
+小项目开发工具库
 
     结构仿照kendo.js；
     继承关系仿照jQuery；
@@ -24,3 +24,5 @@ Rui.js
 
     生成指定位数的随机数：
         $('ruiID').getRandomString()
+
+（停了，懒得写了）
