@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>rui.core.js beta 0.2</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+</head>
+<body>
+<div id="ruiID" class="hello">xxx 是个大傻瓜，啦啦啦啦啦</div>
+<div id="ruiID2" class="hello2" xxx='123'>xxx 是个大傻瓜，啦啦啦啦啦</div>
+</body>
+</html>
+<script type="text/javascript" src="rui.core.js" ></script>
+<script type="text/javascript">
+	$('ruiID').addClass('Rui11');
+	$('ruiID').setAttr({
+		'aaa':'111',
+		'bbb':'222',
+		'ccc':'333',
+		'ddd':'444'
+	});
+	$('ruiID2').addClass('Rui222');
+	$('ruiID2').setAttr('eee',555);
+
+	console.log( $('ruiID2').getRandomString(4) );
+	console.log( $('ruiID2').getAttr('xxx') );
+
+	function aaa(){
+		this.name = 'aaa';
+	};
+	aaa.prototype.age = '男';
+	function bbb(c, d){
+		this.c = c;
+		this.d = d;
+	}
+	
+	$.extend(bbb, aaa);
+	var xx = new bbb();
+	console.log(xx.age);
+
+</script>
